@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Karla, sans-serif;
 }
 
 body {
@@ -24,8 +25,6 @@ main {
   align-items: center;
   padding: 3rem;
 }
-
-
 
 .die--face {
   width: 50px;
