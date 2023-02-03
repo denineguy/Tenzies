@@ -53,10 +53,22 @@ main {
 
 .die--roll {
   background-color: #5035FF;
+  border-radius: 5px;
+  border: 1px solid #5035FF;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: 'Karla', sans-serif;
+  height: 36px;
   margin-top: 25px;
   width: 94px;
-  height: 36px;
-  border-radius: 5px;
-  color: #ffffff;
+  cursor: pointer;
+}
+
+.die--roll:focus {
   border: 1px solid #5035FF;
+}
+
+.die--roll:active {
+  background-color: #ffffff;
+  color: #5035FF;
 }
