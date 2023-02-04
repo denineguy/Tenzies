@@ -18,7 +18,17 @@ export default function App() {
     return newDice;
   }
 
-  const diceElements = dice.map(die => <Die key={die.id} value={die.value} isHeld={die.isHeld}/>)
+  function holdDice(id) {
+    console.log(id)
+  }
+
+  const diceElements = dice.map(die => (
+  <Die 
+    key={die.id}
+    value={die.value}
+    isHeld={die.isHeld}
+    holdDice={() => holdDice(die.id)}/>
+  ))
 
   function rollDice() {
     setDice(allNewDice())
