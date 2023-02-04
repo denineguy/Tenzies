@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid'
 
 export default function App() {
   const [dice, setDice] = React.useState(allNewDice())
-  const [tenzies, setTenzie] = React.useState(false)
+  const [tenzies, setTenzies] = React.useState(false)
 
   React.useEffect(() => {
     const allHeld = dice.every( die => die.isHeld)
@@ -13,6 +13,7 @@ export default function App() {
     const allSameValue = dice.every( die => die.value === firstValue)
 
     if(allHeld && allSameValue){
+      setTenzies(true)
       console.log("You won")
     }
   })
