@@ -86,3 +86,53 @@ main {
   background-color: #ffffff;
   color: #5035FF;
 }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  list-style: 25px  ;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.die--1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.die--2,
+.die--3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.die--2 .dot:nth-of-type(2),
+.die--3 .dot:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.die--3 .dot:nth-of-type(2) {
+  align-self: center;
+}
+
+.die--4,
+.die--5,
+.die--6 {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.die--4 .column,
+.die--5 .column,
+.die--6 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.die--5 .column:nth-of-type(2)  {
+  align-self: center;
+}
