@@ -41,7 +41,8 @@ main {
   text-align: center;
 }
 
-.die--face {
+.die--face,
+.die--roll_count {
   width: 50px;
   height: 50px;
   border-radius: 5px;
@@ -95,7 +96,8 @@ main {
   border-radius: 50%;
 }
 
-.die--1 {
+.die--1,
+.die--counter {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,4 +137,12 @@ main {
 
 .die--5 .column:nth-of-type(2)  {
   align-self: center;
+}
+
+.die--roll_count {
+  background-color: #ffffff;
+}
+
+.die--roll_count_title {
+  margin-top: 1.5rem;
 }
