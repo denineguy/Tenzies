@@ -110,7 +110,6 @@ export default function App() {
         </button>
         <p className="die--roll_count_title">Roll Count: {count}</p>
         <div>{formatTime()}</div>
-        {/* <p>{isActive ? "true" : "false"}</p> */}
       </main>
     </div>
   )
